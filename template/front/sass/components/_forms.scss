@@ -1,0 +1,871 @@
+// General styling
+label {
+    font-weight: $form-label-font-weight;
+    font-size: $form-label-font-size;
+    text-transform: $form-label-text-transform;
+}
+
+textarea.no-resize {
+    resize: none!important;
+}
+// Form control
+.form-control,
+.form-control > .btn {
+    font-size: $form-control-font-size;
+    font-weight: $form-control-font-weight;
+    color: $form-control-color;
+    background-color: $form-control-bg;
+    border-width: $form-control-border-width;
+    border-color: $form-control-border-color;
+    border-radius: $form-control-border-radius;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.form-group textarea.form-control,
+textarea.form-control {
+    height: auto;
+}
+// Form control sizes
+.form-control-lg,
+.input-group-lg > .form-control,
+.input-group-lg > .input-group-addon,
+.input-group-lg > .input-group-btn > .btn {
+    padding: .75rem 1rem;
+    font-size: $form-control-font-size;
+    line-height: 1.5;
+    border-radius: $form-control-border-radius;
+}
+
+.input-group-btn:not(:first-child) > .btn {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+// Form Default
+.form-default .form-control {
+    background: $form-control-bg;
+    border-color: $form-control-border-color;
+    color: $form-control-color;
+}
+
+.form-default .form-control:focus {
+    background: $form-control-bg-focus;
+    border-color: $form-control-border-color-focus;
+}
+
+.form-default .form-control::-webkit-input-placeholder {
+    color: $form-control-placeholder-color;
+}
+
+.form-default .form-control:-moz-placeholder {
+    /* Firefox 18- */
+    color: $form-control-placeholder-color;
+}
+
+.form-default .form-control::-moz-placeholder {
+    /* Firefox 19+ */
+    color: $form-control-placeholder-color;
+}
+
+.form-default .form-control:-ms-input-placeholder {
+    color: $form-control-placeholder-color;
+}
+// Form base 1
+.form-base-1 .form-control {
+    background: darken($color-base-1, 10%);
+    border-color: darken($color-base-1, 12%);
+    color: $color-base-text-1;
+}
+
+.form-base-1 .form-control:focus {
+    background: darken($color-base-1, 10%);
+    border-color: darken($color-base-1, 12%);
+    color: $color-base-text-1;
+}
+
+.form-base-1 .form-control::-webkit-input-placeholder {
+    color: transparentize($color-base-text-1, 0.5);
+}
+
+.form-base-1 .form-control:-moz-placeholder {
+    color: transparentize($color-base-text-1, 0.5);
+}
+
+.form-base-1 .form-control::-moz-placeholder {
+    color: transparentize($color-base-text-1, 0.5);
+}
+
+.form-base-1 .form-control:-ms-input-placeholder {
+    color: transparentize($color-base-text-1, 0.5);
+}
+// Form base 2
+.form-base-2 .form-control {
+    background: darken($color-base-2, 10%);
+    border-color: darken($color-base-2, 12%);
+    color: $color-base-text-2;
+}
+
+.form-base-2 .form-control:focus {
+    background: darken($color-base-2, 10%);
+    border-color: darken($color-base-2, 12%);
+    color: $color-base-text-2;
+}
+
+.form-base-2 .form-control::-webkit-input-placeholder {
+    color: transparentize($color-base-text-2, 0.5);
+}
+
+.form-base-2 .form-control:-moz-placeholder {
+    color: transparentize($color-base-text-2, 0.5);
+}
+
+.form-base-2 .form-control::-moz-placeholder {
+    color: transparentize($color-base-text-2, 0.5);
+}
+
+.form-base-2 .form-control:-ms-input-placeholder {
+    color: transparentize($color-base-text-2, 0.5);
+}
+// Form Inverse: alternative background for form elements (e.g dark)
+.form-inverse .form-control {
+    background: darken($color-space-gray, 3%);
+    border-color: lighten($color-space-gray, 5%);
+    color: $color-gray-light;
+}
+
+.form-inverse .form-control:focus {
+    background: darken($color-space-gray, 3%);
+    border-color: $color-white;
+}
+
+.form-inverse .form-control::-webkit-input-placeholder {
+    color: invert($form-control-placeholder-color);
+}
+
+.form-inverse .form-control:-moz-placeholder {
+    /* Firefox 18- */
+    color: invert($form-control-placeholder-color);
+}
+
+.form-inverse .form-control::-moz-placeholder {
+    /* Firefox 19+ */
+    color: invert($form-control-placeholder-color);
+}
+
+.form-inverse .form-control:-ms-input-placeholder {
+    color: invert($form-control-placeholder-color);
+}
+/* Bootstrap select: plugin (assets/bootstrap-select) */
+.bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+    width: 100% !important;
+}
+
+.form-control.bootstrap-select {
+    background: transparent;
+}
+
+.bootstrap-select .dropdown-menu {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.bootstrap-select .dropdown-menu.show {
+    border-color: #fff;
+    top: -4px;
+    border-radius: $form-control-border-radius;
+}
+
+.bootstrap-select .dropdown-menu .dropdown-item {
+    outline: 0;
+    padding: 0.5rem 1rem;
+}
+
+.form-inverse .bootstrap-select .dropdown-menu .dropdown-item:hover,
+.form-inverse .bootstrap-select .dropdown-menu .selected .dropdown-item {
+    background: lighten(invert($form-control-bg), 5%);
+}
+
+.bootstrap-select.form-control {
+    padding: 0;
+    font-size: 1.9rem;
+}
+
+.bootstrap-select .btn {
+    font-size: $form-control-font-size;
+    font-weight: $form-control-font-weight;
+    font-family: $font-family-base;
+    text-transform: none;
+    letter-spacing: 0;
+    border-radius: $form-control-border-radius;
+}
+
+.form-control > .btn {
+    padding: 0.5rem 0.75rem;
+}
+
+.form-control-lg > .btn {
+    padding: 0.75rem 1.5rem;
+}
+
+.input-group-lg > .input-group-btn > select.btn:not([size]):not([multiple]),
+.input-group-lg > select.form-control:not([size]):not([multiple]),
+.input-group-lg > select.input-group-addon:not([size]):not([multiple]),
+select.form-control-lg:not([size]):not([multiple]) {
+    height: 2.6875rem;
+}
+
+// Bootstrap select - default form style
+.form-default .bootstrap-select .btn-default {
+    background: $form-control-bg;
+    border-color: $form-control-border-color;
+    color: $form-control-placeholder-color;
+}
+
+.form-default .btn-default.active.focus,
+.form-default .btn-default.active:focus,
+.form-default .btn-default.active:hover,
+.form-default .btn-default:active:focus,
+.form-default .btn-default:active:hover,
+.form-default .form-inverse .btn-default:active.focus,
+.form-default .open > .dropdown-toggle.btn-default,
+.form-default .open > .dropdown-toggle.btn-default.focus,
+.form-default .open > .dropdown-toggle.btn-default:focus,
+.form-default .open > .dropdown-toggle.btn-default:hover {
+    background: $form-control-bg-focus;
+    color: $form-control-color-focus;
+    border-color: transparent;
+}
+// Bootstrap select- base 1 form style
+.form-base-1 .bootstrap-select .btn-default {
+    background: darken($color-base-1, 10%);
+    border-color: darken($color-base-1, 12%);
+    color: $color-base-text-1;
+}
+// Bootstrap select- base 2 form style
+.form-base-2 .bootstrap-select .btn-default {
+    background: darken($color-base-2, 10%);
+    border-color: darken($color-base-2, 12%);
+    color: $color-base-text-2;
+}
+// Bootstrap select - inverse form style
+.form-inverse .bootstrap-select .btn-default {
+    background: darken($color-space-gray, 3%);
+    border-color: lighten($color-space-gray, 5%);
+    color: $color-gray-light;
+}
+
+.form-inverse .btn-default.active.focus,
+.form-inverse .btn-default.active:focus,
+.form-inverse .btn-default.active:hover,
+.form-inverse .btn-default:active:focus,
+.form-inverse .btn-default:active:hover,
+.form-inverse .form-inverse .btn-default:active.focus,
+.form-inverse .open > .dropdown-toggle.btn-default,
+.form-inverse .open > .dropdown-toggle.btn-default.focus,
+.form-inverse .open > .dropdown-toggle.btn-default:focus,
+.form-inverse .open > .dropdown-toggle.btn-default:hover {
+    background: darken($color-space-gray, 3%);
+    border-color: inherit;
+}
+
+.form-inverse .bootstrap-select .dropdown-menu {
+    background: invert($form-control-bg);
+    border-color: invert($form-control-bg);
+}
+// Form Material: Just add .form-material next to .form-default or .form-inverse to see the result
+.form-material .bootstrap-select .btn-default,
+.form-material .form-control {
+    background: transparent;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-radius: 0;
+    border-width: 2px;
+    padding-left: 1px;
+    padding-right: 1px;
+}
+
+.form-default.form-material .form-control:focus {
+    background: transparent;
+    border-color: $form-control-border-color;
+}
+
+.form-inverse.form-material .form-control:focus {
+    background: transparent;
+    border-color: invert($form-control-border-color);
+}
+
+.form-material .bar {
+    position: relative;
+    display: block;
+}
+
+.form-material .bar:after,
+.form-material .bar:before {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    position: absolute;
+    background: $color-base-1;
+    transition: 0.2s ease all;
+}
+
+.form-material .bar:before {
+    left: 50%;
+}
+
+.form-material .bar:after {
+    right: 50%;
+}
+
+.form-material .form-control:focus ~ .bar:after,
+.form-material .form-control:focus ~ .bar:before {
+    width: 50%;
+}
+/* CUSTOM CHECKBOXES AND RADIOS */
+.checkbox {
+    //padding-left: 20px;
+    outline: none;
+}
+
+.checkbox-inline {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.checkbox label {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    padding-left: 0.5rem;
+    margin-bottom: 0.8rem;
+    font-size: $form-control-font-size;
+    line-height: 18px;
+}
+
+.checkbox label::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 19px;
+    height: 19px;
+    left: 0;
+    margin-left: -20px;
+    border: 1px solid $form-control-border-color;
+    border-radius: $form-control-border-radius;
+    background-color: $form-control-bg;
+    -webkit-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+    -o-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+    transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+}
+
+.checkbox label::after {
+    display: inline-block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 0;
+    top: 0;
+    margin-left: -20px;
+    padding-left: 3px;
+    padding-top: 0;
+    font-size: 12px;
+    color: transparent;
+}
+
+.checkbox input[type="checkbox"],
+.checkbox input[type="radio"] {
+    opacity: 0;
+    z-index: 1;
+}
+
+.checkbox input[type="checkbox"]:checked + label::after,
+.checkbox input[type="radio"]:checked + label::after {
+    color: $color-base-1;
+    font-family: "FontAwesome";
+    content: "\f00c";
+}
+
+.checkbox input[type="checkbox"]:disabled + label,
+.checkbox input[type="radio"]:disabled + label {
+    opacity: 0.65;
+}
+
+.checkbox input[type="checkbox"]:disabled + label::before,
+.checkbox input[type="radio"]:disabled + label::before {
+    background-color: $form-control-bg-disabled;
+    cursor: not-allowed;
+}
+
+.checkbox.checkbox-circle label::before {
+    border-radius: 50%;
+}
+
+.checkbox.checkbox-inline {
+    margin-top: 0;
+}
+
+.checkbox-success input[type="checkbox"]:checked + label::before,
+.checkbox-success input[type="radio"]:checked + label::before {
+    background-color: #5cb85c;
+    border-color: #5cb85c;
+}
+
+.checkbox-success input[type="checkbox"]:checked + label::after,
+.checkbox-success input[type="radio"]:checked + label::after {
+    color: #fff;
+}
+
+.has-success input[type="checkbox"] + label::before,
+.has-success input[type="radio"] + label::before {
+    border-color: #5cb85c;
+}
+
+.checkbox-primary input[type="checkbox"]:checked + label::before,
+.checkbox-primary input[type="radio"]:checked + label::before {
+    background-color: $color-base-1;
+    border-color: $color-base-1;
+}
+
+.checkbox-primary input[type="checkbox"]:checked + label::after,
+.checkbox-primary input[type="radio"]:checked + label::after {
+    color: $color-base-text-1;
+}
+
+.checkbox-warning input[type="checkbox"]:checked + label::before,
+.checkbox-warning input[type="radio"]:checked + label::before {
+    background-color: #ec971f;
+    border-color: #ec971f;
+}
+
+.checkbox-warning input[type="checkbox"]:checked + label::after,
+.checkbox-warning input[type="radio"]:checked + label::after {
+    color: #fff;
+}
+
+.has-warning input[type="checkbox"] + label::before,
+.has-warning input[type="radio"] + label::before {
+    border-color: #ec971f;
+}
+
+.checkbox-danger input[type="checkbox"]:checked + label::before,
+.checkbox-danger input[type="radio"]:checked + label::before {
+    background-color: #c9302c;
+    border-color: #c9302c;
+}
+
+.checkbox-danger input[type="checkbox"]:checked + label::after,
+.checkbox-danger input[type="radio"]:checked + label::after {
+    color: #fff;
+}
+
+.has-error input[type="checkbox"] + label::before,
+.has-error input[type="radio"] + label::before {
+    border-color: #c9302c;
+}
+/* Radio inputs */
+.radio {
+    //padding-left: 20px;
+    outline: none;
+}
+
+.radio-inline {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.radio label {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: $form-control-font-size;
+    line-height: 18px;
+    position: relative;
+    padding-left: 8px;
+}
+
+.radio label::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    left: 0;
+    margin-left: -20px;
+    border: 2px solid $form-control-border-color;
+    border-radius: 50%;
+    background-color: $form-control-bg;
+    -webkit-transition: border 0.15s ease-in-out;
+    -o-transition: border 0.15s ease-in-out;
+    transition: border 0.15s ease-in-out;
+}
+
+.radio label::after {
+    display: inline-block;
+    position: absolute;
+    content: " ";
+    width: 11px;
+    height: 11px;
+    left: 3px;
+    top: 3px;
+    margin-left: -20px;
+    border-radius: 50%;
+    background-color: $form-control-color-focus;
+    -webkit-transform: scale(0, 0);
+    -ms-transform: scale(0, 0);
+    -o-transform: scale(0, 0);
+    transform: scale(0, 0);
+    -webkit-transition: -webkit-transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
+    -moz-transition: -moz-transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
+    -o-transition: -o-transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
+    transition: transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
+}
+
+.radio input[type="radio"] {
+    opacity: 0;
+    z-index: 1;
+}
+
+.radio input[type="radio"]:focus + label::before {
+    outline: none;
+}
+
+.radio input[type="radio"]:checked + label::after {
+    -webkit-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -o-transform: scale(1, 1);
+    transform: scale(1, 1);
+}
+
+.radio input[type="radio"]:disabled + label {
+    opacity: 0.65;
+}
+
+.radio input[type="radio"]:disabled + label::before {
+    cursor: not-allowed;
+}
+
+.radio.radio-inline {
+    margin-top: 0;
+}
+
+.radio-primary input[type="radio"] + label::after {
+    background-color: $color-base-1;
+}
+
+.radio-primary input[type="radio"]:checked + label::before {
+    border-color: $color-base-1;
+}
+
+.radio-primary input[type="radio"]:checked + label::after {
+    background-color: $color-base-1;
+}
+
+.radio-danger input[type="radio"] + label::after {
+    background-color: #d9534f;
+}
+
+.radio-danger input[type="radio"]:checked + label::before {
+    border-color: #d9534f;
+}
+
+.radio-danger input[type="radio"]:checked + label::after {
+    background-color: #d9534f;
+}
+
+.radio-info input[type="radio"] + label::after {
+    background-color: #5bc0de;
+}
+
+.radio-info input[type="radio"]:checked + label::before {
+    border-color: #5bc0de;
+}
+
+.radio-info input[type="radio"]:checked + label::after {
+    background-color: #5bc0de;
+}
+
+.radio-warning input[type="radio"] + label::after {
+    background-color: #f0ad4e;
+}
+
+.radio-warning input[type="radio"]:checked + label::before {
+    border-color: #f0ad4e;
+}
+
+.radio-warning input[type="radio"]:checked + label::after {
+    background-color: #f0ad4e;
+}
+
+.radio-success input[type="radio"] + label::after {
+    background-color: #5cb85c;
+}
+
+.radio-success input[type="radio"]:checked + label::before {
+    border-color: #5cb85c;
+}
+
+.radio-success input[type="radio"]:checked + label::after {
+    background-color: #5cb85c;
+}
+// Product size (square) - custom styles for radio/checkbox input
+
+.product-size::after,
+.product-size::before {
+    content: '';
+    display: table;
+}
+
+.product-size::after {
+    clear: both;
+}
+
+.product-size input {
+    left: -9999px;
+    position: absolute;
+}
+
+.product-size label {
+    width: 36px;
+    height: 36px;
+    float: left;
+    padding: 6px 0;
+    margin-right: 4px;
+    display: block;
+    color: $color-gray-light;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    background: transparent;
+    text-transform: uppercase;
+    border: 1px solid $form-control-border-color;
+}
+
+.product-size label {
+    -ms-transition: color 0.3s;
+    -moz-transition: color 0.3s;
+    -webkit-transition: color 0.3s;
+}
+
+.product-size label > img {
+    max-width: 100%;
+}
+
+.product-size label:hover {
+    color: $color-base-1;
+    cursor: pointer;
+    border-color: $color-base-1;
+}
+
+.product-size input:checked ~ label {
+    color: $color-base-1;
+    border-color: $color-base-1;
+    font-weight: 600;
+}
+// Product size - STYLE 1 (fluid)
+
+.product-size--style-1 label {
+    width: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+/* CUSTOM PRODUCT COLOR INPUT */
+.product-color::after,
+.product-color::before {
+    content: '';
+    display: table;
+}
+
+.product-color::after {
+    clear: both;
+}
+
+.product-color input {
+    left: -9999px;
+    position: absolute;
+}
+
+.product-color label {
+    width: 36px;
+    height: 36px;
+    float: left;
+    padding: 5px;
+    margin-right: 4px;
+    display: block;
+    font-size: 14px;
+    text-align: center;
+    opacity: 0.7;
+    border: 1px solid transparent;
+}
+
+.product-color label {
+    -ms-transition: color 0.3s;
+    -moz-transition: color 0.3s;
+    -webkit-transition: color 0.3s;
+}
+
+.product-color label:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+
+.product-color input:checked ~ label {
+    //height: 40px;
+    border-color: $color-base-1;
+    opacity: 1;
+}
+
+.product-color-circle label {
+    border-radius: 100%;
+}
+
+.product-color-circle input:checked ~ label {
+    height: 36px;
+}
+// User forms (Sign in, register)
+.form-card--style-1 {
+    background-color: $card-bg;
+    //color: @formUserTextColor;
+    border: 1px solid $card-border-color;
+}
+
+.form-card--style-1 .form-header {
+    padding: ($spacer * 1.2);
+    background-color: $card-header-bg;
+    border-bottom: 1px solid $card-border-color;
+}
+
+.form-card--style-1 .form-header .heading {
+    margin: 0;
+    padding: 0;
+    color: $heading-color;
+}
+
+.form-card--style-1 .form-body {
+    padding: $spacer * 2;
+}
+
+.form-card--style-1 .form-footer {
+    padding: $spacer ($spacer * 2);
+    background-color: $card-footer-bg;
+}
+
+.form-card--style-2 {
+    //color: @formUserTextColor;
+}
+
+.form-card--style-2 .form-header {
+    position: relative;
+    padding: ($spacer * 2) 0;
+    background-color: $color-base-1;
+}
+
+.form-card--style-2 .form-header .form-header-title {
+    margin: 0;
+    padding: 0;
+    color: $color-base-text-1;
+}
+
+.form-card--style-2 .form-header:after {
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-width: 14px;
+    top: 100%;
+    left: 50%;
+    border-top-color: $color-base-1;
+    margin-left: -14px;
+}
+
+.form-card--style-2 .form-header .form-header-icon i {
+    font-size: 3rem;
+    color: $color-base-text-1;
+}
+
+.form-card--style-2 .form-body {
+    padding: $spacer * 2;
+    background-color: $card-bg;
+}
+
+.form-card--style-2 .form-footer {
+    padding: $spacer 0;
+    background-color: $card-bg;
+}
+
+.form-user-footer-links a {
+    font-size: $font-size-xs;
+    color: $color-gray-light;
+}
+// Validation
+
+.help-block.with-errors > ul > li {
+    font-size: $font-size-sm;
+    color: $color-red;
+}
+
+.has-error .form-control:focus {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    border-color: $color-red;
+}
+
+.has-success .form-control:focus {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    border-color: $color-green;
+}
+
+.has-feedback .glyphicon {
+    font-family: "Ionicons" !important;
+    font-size: 12px;
+}
+
+.has-feedback .glyphicon-remove::before {
+    content: "\f129";
+    color: $color-danger;
+}
+
+.has-feedback .glyphicon-ok::before {
+    content: "\f121";
+    color: $color-success;
+}
+
+// Form subscribe large
+.form-subscribe-lg .form-control {
+    border: 0;
+    background: transparent;
+    padding: 0.5rem 1rem;
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: rgba(0, 0, 0, 1);
+    border-left: 5px solid rgba(0, 0, 0, 0.3);
+    border-radius: 0;
+}
+.form-subscribe-lg .form-control:focus {
+    background: transparent;
+}
+.form-subscribe-lg.form-inverse .form-control {
+    border-left: 5px solid rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.form-subscribe-lg.form-inverse .form-control::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.form-subscribe-lg.form-inverse .form-control:-moz-placeholder {
+    /* Firefox 18- */
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.form-subscribe-lg.form-inverse .form-control::-moz-placeholder {
+    /* Firefox 19+ */
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.form-subscribe-lg.form-inverse .form-control:-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.9);
+}

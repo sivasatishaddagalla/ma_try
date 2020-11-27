@@ -1,0 +1,25 @@
+/*
+Theme: Boomerang - Multipurpose Template
+Website URI: https://wrapbootstrap.com/theme/boomerang-multipurpose-template-WB021609D
+Author: Webpixels
+Author URI: https://www.webpixels.io
+*/
+
+// SASS variables
+@import "variables/_variables.scss";
+//@import "variables/_variables-classic.scss";
+//@import "variables/_variables-minimalist.scss";
+//@import "variables/_variables-dark.scss";
+//@import "variables/_variables-brown.scss";
+//@import "variables/_variables-bnw.scss";
+
+// Navigations
+@import "header/_nav-default.scss";
+@import "header/_nav-aside.scss";
+@import "header/nav-fullscreen.scss";
+
+// Main styles
+@import "core/_base.scss";
+
+// User's custom styles
+@import "core/_custom.scss";

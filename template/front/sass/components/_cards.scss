@@ -1,0 +1,320 @@
+// Card wrapper - used for spacing
+.card-wrapper > .card:not(:last-child) {
+    margin-bottom: $spacer * 2;
+}
+
+// Cards - General styling
+.card {
+    position: relative;
+    z-index: 10;
+    border: 1px solid $card-border-color;
+    border-radius: $card-border-radius;
+    background: $card-bg;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+
+@media(min-width: 992px) {
+    // Sticked cards
+    .card-sticked-bottom {
+        position: absolute;
+        bottom: 0;
+        border-radius: $card-border-radius $card-border-radius 0 0;
+    }
+}
+
+// Fixed heights
+.card-overflow-fade {
+    position: relative;
+}
+.card-overflow-fade::after {
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.3);
+    bottom: 0;
+    left: 0;
+}
+// Card borders
+.card .b-xs-top,
+.card .b-xs-right,
+.card .b-xs-bottom,
+.card .b-xs-left {
+    border-color: $card-border-color !important;
+}
+
+// Card layout elements
+.card-body {
+    padding: $card-spacer-y $card-spacer-x;
+}
+.card-body > .lead {
+    margin-bottom: 0;
+}
+.card-title {
+    padding: $card-spacer-y $card-spacer-x;
+    border-bottom: 1px solid $card-border-color;
+    margin: 0;
+}
+.card-title > .heading {
+    margin: 0;
+    display: inline-block;
+}
+.card-title > .btn-aux {
+    float: right;
+    font-size: $font-size-sm;
+    color: $color-gray-light;
+}
+.card-title > .btn-aux > .aux-text {
+    display: inline-block;
+    margin-left: 5px;
+    color: $color-gray-dark;
+}
+.card-title > .btn-aux:hover > .aux-text {
+    color: $color-base-1;
+}
+
+.card.bg-base-1 .card-title-wrapped {
+    background: darken($color-base-1, 3%);
+    border: 1px solid darken($color-base-1, 5%);
+}
+.card.bg-base-1 .card-title .heading {
+    color: $color-base-text-1;
+}
+
+.card-inner-title-wrapper {
+    padding: (1.5 * $spacer) 0;
+}
+.card-inner-title {
+    margin: 0;
+    padding: 0;
+    font-size: $font-size-sm;
+    font-weight: $heading-font-weight;
+    color: $heading-color;
+}
+.card-inner-title > i {
+    margin-right: 6px;
+}
+.card-inner-subtitle {
+    margin: 4px 0 0 0;
+    padding: 0;
+    font-size: $font-size-sm;
+    font-weight: 300;
+    color: $color-gray-light;
+}
+.card-inner-subtitle.subtitle-icon-aligned {
+    padding-left: 1.5rem;
+}
+
+.card-footer {
+    border-top: 1px solid $card-border-color;
+    padding: $spacer $card-spacer-x;
+    background: inherit;
+}
+@media(min-width: 992px) {
+    .card-footer.absolute-bottom {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+}
+
+.card-icon-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.card-icon-bg i {
+    font-size: 10rem;
+    color: rgba(0, 0, 0, 0.1);
+    line-height: 0;
+}
+// Card inverse
+.card-inverse {
+    background: $card-inverse-bg;
+}
+.card-inverse *:not(.btn):not(.alert):not(.form-control):not(.heading):not(a) {
+    color: $card-inverse-text-color;
+}
+.card-inverse .heading,
+.card-inverse .heading > a {
+    color: $card-inverse-title-color;
+}
+
+.card-inverse .card-footer {
+    border-top-color: $card-inverse-border-color;
+}
+
+.card-inverse p {
+    color: $card-inverse-text-color;
+}
+.card-inverse .heading {
+    color: $card-inverse-heading-color;
+}
+.card-inverse .heading-light {
+    color: $card-inverse-heading-light-color;
+}
+.card-inverse .stats-entry .stats-count {
+    color: $card-inverse-heading-color;
+}
+.card-inverse .stats-entry .stats-label {
+    color: $card-inverse-heading-light-color;
+}
+.card-inverse .useful-links a {
+    color: $sidebar-inverse-link-color;
+}
+.card-inverse .useful-links a:hover {
+    color: $sidebar-inverse-link-color-hover;
+}
+
+// Card colored
+.card-colored {
+    border: 0;
+}
+
+// Stacked colored cards
+@media(min-width: 768px) {
+    .row-no-padding .card-colored {
+        border-radius: 0;
+    }
+    .row-no-padding [class^=col-]:first-child .card-colored {
+        border-radius: $card-border-radius 0 0  $card-border-radius;
+    }
+    .row-no-padding [class^=col-]:last-child .card-colored {
+        border-radius: 0 $card-border-radius $card-border-radius 0 ;
+    }
+}
+
+// Colored card layout
+.card-colored .card-body {
+    padding: $spacer * 2.5;
+}
+
+.card-colored .card-title + .card-body {
+    padding: $card-spacer-y $card-spacer-x;
+}
+.card-colored .card-body .heading,
+.card-colored .card-body p {
+    color: #FFF;
+}
+
+// Card images
+.card-image {
+    position: relative;
+}
+.card-image img,
+.card-image > .view {
+    max-width: 100%;
+    //max-width: calc(100% + 2px);
+    //width: auto;
+    //margin-left: -1px;
+    //margin-top: -1px;
+    border-radius: $card-border-radius $card-border-radius 0 0;
+}
+[class*=z-depth] .card-image img,
+[class*=z-depth] .card-image > .view {
+    max-width: 100%!important;
+    margin-left: 0;
+    margin-top: 0;
+}
+.card-title + .card-image img,
+.card-title + .card-image > .view {
+    border-radius: 0;
+}
+.card-icon {
+    padding: $spacer * 2.5;
+}
+.card-icon-lg i,
+.card-icon-lg i {
+    font-size: 70px;
+    line-height: 1;
+}
+.card-image-container {
+    position: relative;
+    height: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex: 1;
+    flex: 1;
+    -ms-flex-align: center;
+    align-items: center;
+    background-size: cover;
+    background-color: #efe9e8;
+    -ms-flex-pack: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.card-image-container > .card-image {
+    max-width: none;
+}
+
+@media (min-width: 768px) {
+    .card > .row [class^=col-md] .card-image-container .card-img > img {
+        top: 0;
+        left: 0;
+        height: 100%!important;
+        width: 100%;
+        position: absolute;
+        object-fit: cover;
+    }
+}
+
+// Cards: Horizontal
+.card-horizontal .card-image img {
+    border-radius: $card-border-radius 0 0 $card-border-radius;
+}
+.card-horizontal .card-body{
+    padding: $spacer * 1.5;
+}
+.card-horizontal .card-footer {
+    padding-left: $spacer * 1.5;
+    padding-right: $spacer * 1.5;
+}
+
+.card-blockquote {
+    border-left: 0;
+}
+
+.card-blockquote > p {
+    font-size: $font-size-lg;
+    line-height: 1.7;
+    color: $color-gray-light;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.card-blockquote > p > i {
+    font-size: 30px;
+    color: $color-gray-lighter;
+    display: inline-block;
+}
+.card-blockquote > p > .quote-left {
+    position: relative;
+    margin-right: 10px;
+    top: -12px;
+}
+.card-blockquote > p > .quote-right {
+    position: relative;
+    margin-left: 10px;
+    bottom: -12px;
+}
+
+.card-blockquote > footer {
+    font-size: $font-size-base;
+    margin-top: $spacer * 2;
+    color: $color-base-1;
+}
+
+// Change card and its elements on hover
+.card-hover--animation-1,
+.card-hover--animation-1 * {
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+
+.card-hover--animation-1:hover .btn {
+    background: $color-base-1;
+    color: $color-base-text-1;
+    border-color: $color-base-1;
+}

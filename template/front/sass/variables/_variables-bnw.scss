@@ -1,0 +1,86 @@
+// Body
+$body-bg: #FFF;
+
+// Gray tones
+$color-gray-dark:                 rgba(0, 0, 0, 1);
+$color-gray:                      rgba(0, 0, 0, 0.9);
+$color-gray-light:                rgba(0, 0, 0, 0.8);
+$color-gray-lighter:              rgba(0, 0, 0, 0.7);
+$color-gray-lightest:             rgba(0, 0, 0, 0.6);
+
+// Base color 1 (Site color 1)
+$color-base-1: rgba(0, 0, 0, 1);
+$color-base-text-1: #FFF;
+
+// Base color 2 (Site color 2)
+$color-base-2: rgba(255, 255, 255, 1);
+$color-base-text-2: #000;
+
+// Base color 3. Choose a neutral color such gray or light gray
+$color-base-3: $color-gray-light;
+$color-base-text-3: rgba(255, 255, 255, 0.9);
+
+// Base color 4. Choose a dark color (or a light one for the dark theme)
+$color-base-4: #1d2125;
+$color-base-text-4: #FFF;
+
+// Base color 5. Choose a light color (or a dark one for the dark theme)
+$color-base-5: #FFF;
+$color-base-text-5: #0A0814;
+
+// Background colors used for sections (.slice)
+$section-color-1: #FFF;
+$section-color-2: 000;
+$section-color-3: rgba(0, 0, 0, 0.9);
+$section-color-4: rgba(0, 0, 0, 0.8);
+
+// Headings
+$heading-color: rgb(0, 0, 0);
+$heading-inverse-color: $color-white;
+
+// Section titles
+$section-title-color: #000;
+$section-title-color-inverse: #FFF;
+
+// Borders
+$border-color-base: #000;
+$border-color-inner: rgba(243, 243, 243, 0.7);
+
+// Sidebar
+$sidebar-bg: #fafafa;
+$sidebar-border-color: $border-color-base;
+$sidebar-object-border-color: darken($sidebar-bg, 10%);
+
+// Slidebar
+$slidebar-bg: #1f1f1f;
+$slidebar-border-color: transparent;
+$slidebar-color: rgba(255, 255, 255, 0.5);
+$slidebar-color-hover: rgba(255, 255, 255, 0.7);
+$slidebar-heading-color: $color-gray-light;
+
+// Cards
+$card-wrapper-bg: #222;
+
+$card-bg:                  lighten($section-color-1, 5%);
+$card-border-color:        rgba(0, 0, 0, 0.1);
+$card-header-bg:           #f1f1f1;
+$card-footer-bg:           #f1f1f1;
+$card-text-color:          $color-gray;
+
+$card-inverse-bg:                  #1b1e23;
+$card-inverse-border-color:        rgba(0, 0, 0, .15);
+$card-inverse-header-bg:           #333;
+$card-inverse-footer-bg:           #333;
+
+$card-inverse-title-color:         #f3f3f3;
+$card-inverse-text-color:          #999;
+
+// Cards
+$card-border-radius: 0;
+
+// Hover effects
+$hover-effect-mask-bg: rgba(0, 0, 0, .8);
+
+// Progress
+$progress-bg: lighten($section-color-1, 5%);
+$progress-bg-active: $color-base-1;

@@ -1,0 +1,505 @@
+// Spacing
+[class^="space-"] {
+    display: block;
+}
+.space-xs-sm {
+    margin-bottom: $spacer * 1.5;
+}
+.space-xs-md {
+    margin-bottom: $spacer * 2.5;
+}
+.space-xs-lg {
+    margin-bottom: $spacer * 3.5;
+}
+.space-xs-xl {
+    margin-bottom: $spacer * 4.5;
+}
+@media(min-width: 768px) {
+    .space-sm-sm {
+        margin-bottom: $spacer * 1.5;
+    }
+    .space-sm-md {
+        margin-bottom: $spacer * 2.5;
+    }
+    .space-sm-lg {
+        margin-bottom: $spacer * 3.5;
+    }
+    .space-sm-xl {
+        margin-bottom: $spacer * 4.5;
+    }
+}
+@media(min-width: 992px) {
+    .space-md-sm {
+        margin-bottom: $spacer * 1.5;
+    }
+    .space-md-md {
+        margin-bottom: $spacer * 2.5;
+    }
+    .space-md-lg {
+        margin-bottom: $spacer * 3.5;
+    }
+    .space-md-xl {
+        margin-bottom: $spacer * 4.5;
+    }
+}
+@media(min-width: 1201px) {
+    .space-lg-sm {
+        margin-bottom: $spacer * 1.5;
+    }
+    .space-lg-md {
+        margin-bottom: $spacer * 2.5;
+    }
+    .space-lg-lg {
+        margin-bottom: $spacer * 3.5;
+    }
+    .space-lg-xl {
+        margin-bottom: $spacer * 4.5;
+    }
+}
+// Spacing for certain resolutions
+@media(max-width: 767px) {
+    .space-xs-only-1 {
+        clear:both;
+        margin-bottom: $spacer;
+    }
+    .space-xs-only-2 {
+        clear:both;
+        margin-bottom: $spacer * 2;
+    }
+    .space-xs-only-3 {
+        clear:both;
+        margin-bottom: $spacer * 3;
+    }
+}
+@media(min-width: 768px) and (max-width: 991px) {
+    .space-sm-only-1 {
+        clear:both;
+        margin-bottom: $spacer;
+    }
+    .space-sm-only-2 {
+        clear:both;
+        margin-bottom: $spacer * 2;
+    }
+    .space-sm-only-3 {
+        clear:both;
+        margin-bottom: $spacer * 3;
+    }
+}
+@media(min-width: 992px) and (max-width: 1200px) {
+    .space-md-only-1 {
+        clear:both;
+        margin-bottom: $spacer;
+    }
+    .space-md-only-2 {
+        clear:both;
+        margin-bottom: $spacer * 2;
+    }
+    .space-md-only-3 {
+        clear:both;
+        margin-bottom: $spacer * 3;
+    }
+}
+@media(min-width: 1201px) {
+    .space-lg-only-1 {
+        clear:both;
+        margin-bottom: $spacer;
+    }
+    .space-lg-only-2 {
+        clear:both;
+        margin-bottom: $spacer * 2;
+    }
+    .space-lg-only-3 {
+        clear:both;
+        margin-bottom: $spacer * 3;
+    }
+}
+// Margin spacing
+.no-margin {
+    margin: 0!important;
+}
+.mt-0 {
+    margin-top: 0!important;
+}
+
+// Negative margins
+@media(min-width: 992px) {
+    .mt--1 {
+        margin-top: -($spacer)!important;
+    }
+    .mt--2 {
+        margin-top: -($spacer * 2)!important;
+    }
+    .mt--3 {
+        margin-top: -($spacer * 3)!important;
+    }
+
+    .mr--1 {
+        margin-right: -($spacer)!important;
+    }
+    .mr--2 {
+        margin-right: -($spacer * 2)!important;
+    }
+    .mr--3 {
+        margin-right: -($spacer * 3)!important;
+    }
+
+    .mb--1 {
+        margin-bottom: -($spacer)!important;
+    }
+    .mb--2 {
+        margin-bottom: -($spacer * 2)!important;
+    }
+    .mb--3 {
+        margin-bottom: -($spacer * 3)!important;
+    }
+
+    .ml--1 {
+        margin-left: -($spacer)!important;
+    }
+    .ml--2 {
+        margin-left: -($spacer * 2)!important;
+    }
+    .ml--3 {
+        margin-left: -($spacer * 3)!important;
+    }
+
+    // Large margins in pixels
+    .mt-150 {
+        margin-top: 150px!important;
+    }
+    .mb-150 {
+        margin-bottom: 150px!important;
+    }
+
+    .mt-300 {
+        margin-top: 300px!important;
+    }
+    .mb-300 {
+        margin-bottom: 300px!important;
+    }
+
+    // Large negative margins in pixels
+    .mt--150 {
+        margin-top: -150px!important;
+    }
+    .mb--150 {
+        margin-bottom: -150px!important;
+    }
+
+    .mt--300 {
+        margin-top: -300px!important;
+    }
+    .mb--300 {
+        margin-bottom: -300px!important;
+    }
+}
+
+// Padding spacing
+.no-padding {
+    padding: 0!important;
+}
+.pt-0 {
+    padding-top: 0!important;
+}
+
+// Negative paddings
+@media(min-width: 992px) {
+    .pb-150 {
+        padding-bottom: 150px;
+    }
+}
+
+//  Vh spacing
+.top-10vh {
+    top: 10vh;
+}
+// Text styles
+.text-uppercase {
+    text-transform: uppercase!important;
+}
+.text-capitalize {
+    text-transform: capitalize!important;
+}
+.text-normal {
+    text-transform: none!important;
+}
+.text-line-through {
+    text-decoration: line-through;
+}
+.text-underline {
+    text-decoration: underline;
+}
+
+// Font families
+.font-blzee {
+    font-family: 'Blzee', sans-serif!important;
+}
+.font-custom-1 {
+	font-family: 'Sue Ellen Francisco', sans-serif!important;
+}
+.font-custom-2 {
+	font-family: 'Pacifico', sans-serif!important;
+}
+.font-custom-3 {
+	font-family: 'YellowTail', sans-serif!important;
+}
+.font-custom-4 {
+	font-family: 'Slabo 27px', sans-serif!important;
+}
+
+// Standard border
+.no-border {
+    border: 0!important;
+}
+.b-xs-all {
+    border: 1px solid $border-color-base;
+}
+.b-xs-top {
+    border-top: 1px solid $border-color-base;
+}
+.b-xs-right {
+    border-right: 1px solid $border-color-base;
+}
+.b-xs-bottom {
+    border-bottom: 1px solid $border-color-base;
+}
+.b-xs-left {
+    border-left: 1px solid $border-color-base;
+}
+@media(min-width: 768px) {
+    .b-md-all {
+        border: 1px solid $border-color-base;
+    }
+    .b-md-top {
+        border-top: 1px solid $border-color-base;
+    }
+    .b-md-right {
+        border-right: 1px solid $border-color-base;
+    }
+    .b-md-bottom {
+        border-bottom: 1px solid $border-color-base;
+    }
+    .b-md-left {
+        border-left: 1px solid $border-color-base;
+    }
+}
+@media(min-width: 992px) {
+    .b-lg-all {
+        border: 1px solid $border-color-base;
+    }
+    .b-lg-top {
+        border-top: 1px solid $border-color-base;
+    }
+    .b-lg-right {
+        border-right: 1px solid $border-color-base;
+    }
+    .b-lg-bottom {
+        border-bottom: 1px solid $border-color-base;
+    }
+    .b-lg-left {
+        border-left: 1px solid $border-color-base;
+    }
+}
+// Radius
+.no-radius {
+    border-radius: 0!important;
+}
+// Shadows: used for large section
+.sct-shadow-top-1 {
+    background-image: url('../images/shadows/shadow-1.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+.sct-shadow-bottom-1 {
+    background-image: url('../images/shadows/shadow-1.png');
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+// Font strength
+.strong {
+    font-weight: bold!important;
+}
+.strong-100 {
+    font-weight: 100!important;
+}
+.strong-200 {
+    font-weight: 200!important;
+}
+.strong-300 {
+    font-weight: 300!important;
+}
+.strong-400 {
+    font-weight: 400!important;
+}
+.strong-500 {
+    font-weight: 500!important;
+}
+.strong-600 {
+    font-weight: 600!important;
+}
+.strong-700 {
+    font-weight: 700!important;
+}
+/* LINE SPACING */
+.ls-1 {
+    letter-spacing: 1px!important;
+}
+.ls-2 {
+    letter-spacing: 2px!important;
+}
+.ls-3 {
+    letter-spacing: 3px!important;
+}
+.ls-4 {
+    letter-spacing: 4px!important;
+}
+.ls-5 {
+    letter-spacing: 5px!important;
+}
+
+// Line heights
+.line-height-1_6 {
+    line-height: 1.6!important;
+}
+
+.line-height-1_8 {
+    line-height: 1.8!important;
+}
+// Text
+.text-italic {
+    font-style: italic!important;
+}
+
+// Z-depth for depth illusion using shadows
+.z-depth--removed {
+    border-width: 1px!important;
+    box-shadow: none!important;
+}
+.z-depth-1:not(.btn),
+.z-depth-1--hover:not(.btn):hover,
+.z-depth-1-top:not(.btn),
+.z-depth-1-top--hover:not(.btn):hover,
+.z-depth-1-bottom:not(.btn),
+.z-depth-1-bottom--hover:not(.btn):hover,
+.z-depth-2:not(.btn),
+.z-depth-2--hover:not(.btn):hover,
+.z-depth-2-top:not(.btn),
+.z-depth-2-top--hover:not(.btn):hover,
+.z-depth-2-bottom:not(.btn),
+.z-depth-2-bottom--hover:not(.btn):hover,
+.z-depth-3:not(.btn),
+.z-depth-3--hover:not(.btn):hover,
+.z-depth-3-top:not(.btn),
+.z-depth-3-top--hover:not(.btn):hover,
+.z-depth-3-bottom:not(.btn),
+.z-depth-3-bottom--hover:not(.btn):hover,
+.z-depth-4:not(.btn),
+.z-depth-4--hover:not(.btn):hover,
+.z-depth-4-top:not(.btn),
+.z-depth-4-top--hover:not(.btn):hover,
+.z-depth-4-bottom:not(.btn),
+.z-depth-4-bottom--hover:not(.btn):hover,
+.z-depth-5:not(.btn),
+.z-depth-5--hover:not(.btn):hover,
+.z-depth-5-top:not(.btn),
+.z-depth-5-top--hover:not(.btn):hover,
+.z-depth-5-bottom:not(.btn),
+.z-depth-5-bottom--hover:not(.btn):hover {
+    border-width: 0 !important;
+}
+
+.z-depth-0,
+.z-depth-0--hover:hover {
+    box-shadow: none!important;
+}
+.z-depth-1,
+.z-depth-1--hover:hover {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.16), 0 2px 10px rgba(0, 0, 0, 0.12);
+}
+.z-depth-1-top,
+.z-depth-1-top--hover:hover {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
+}
+.z-depth-1-bottom,
+.z-depth-1-bottom--hover:hover {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.16);
+}
+.z-depth-2,
+.z-depth-2--hover:hover {
+    box-shadow: 0 8px 17px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+}
+.z-depth-2-top,
+.z-depth-2-top--hover:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.19);
+}
+.z-depth-2-bottom,
+.z-depth-2-bottom--hover:hover {
+    box-shadow: 0 8px 17px rgba(0, 0, 0, 0.2);
+}
+.z-depth-3,
+.z-depth-3--hover:hover {
+    box-shadow: 0 12px 15px rgba(0, 0, 0, 0.24), 0 17px 50px rgba(0, 0, 0, 0.19);
+}
+.z-depth-3-top,
+.z-depth-3-top--hover:hover {
+    box-shadow: 0 17px 50px rgba(0, 0, 0, 0.19);
+}
+.z-depth-3-bottom,
+.z-depth-3-bottom--hover:hover {
+    box-shadow: 0 12px 15px rgba(0, 0, 0, 0.24);
+}
+.z-depth-4,
+.z-depth-4--hover:hover {
+    box-shadow: 0 16px 28px rgba(0, 0, 0, 0.22), 0 25px 55px rgba(0, 0, 0, 0.21);
+}
+.z-depth-4-top,
+.z-depth-4-top--hover:hover {
+    box-shadow: 0 25px 55px rgba(0, 0, 0, 0.21);
+}
+.z-depth-4-bottom,
+.z-depth-4-bottom--hover:hover {
+    box-shadow: 0 16px 28px rgba(0, 0, 0, 0.22);
+}
+.z-depth-5,
+.z-depth-5--hover:hover {
+    box-shadow: 0 27px 24px rgba(0, 0, 0, 0.2), 0 40px 77px rgba(0, 0, 0, 0.22);
+}
+.z-depth-5-top,
+.z-depth-5-top--hover:hover {
+    box-shadow: 0 40px 77px rgba(0, 0, 0, 0.22);
+}
+.z-depth-5-bottom,
+.z-depth-5-bottom--hover:hover {
+    box-shadow: 0 27px 24px rgba(0, 0, 0, 0.2);
+}
+
+// Radius
+.rounded {
+    border-radius: $border-radius;
+}
+
+// Image
+// .img-responsive {
+//     max-width: 100%;
+//     height: auto;
+// }
+.img-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.img-circle {
+    border-radius: 50%!important;
+}
+// Other classes
+.relative {
+    position: relative;
+}
+
+// Overflows
+.overflow--visible {
+    overflow: visible!important;
+}
+.overflow--hidden {
+    overflow: hidden!important;
+}

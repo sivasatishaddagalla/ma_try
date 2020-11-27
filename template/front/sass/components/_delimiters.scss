@@ -1,0 +1,147 @@
+.delimiter {
+    display: block;
+    margin-top: 20px;
+}
+.delimiter.delimiter--fixed-width {
+    width: 130px !important;
+    margin: auto;
+}
+// Delimiter: STYLE 1
+.delimiter--style-1 {
+	border-bottom: 1px solid $border-color-base;
+	margin: 30px 0;
+	position: relative;
+}
+.delimiter--style-1 .delimiter-title {
+	width: 200px;
+	position: relative;
+	top: 25px;
+	background: #fff;
+	border: 2px solid $border-color-base;
+	color: $color-gray-light;
+	margin: auto;
+	height: 50px;
+	text-align: center;
+	z-index: 3;
+	cursor: default;
+}
+
+.delimiter--style-1 .delimiter-title h3 {
+	margin: 0;
+	padding: 0;
+	line-height: 50px;
+	font-size: $font-size-h6;
+	font-weight: 600;
+}
+
+.delimiter--style-1 .divider-title-wrapper::before{
+	content: "";
+	width: 280px;
+	height: 50px;
+	position: absolute;
+	margin-left: -140px;
+	left: 50%;
+	top: 50%;
+	background: #fff;
+	z-index: 2;
+}
+
+// Delimiter: STYLE 2
+.delimiter--style-2 {
+    border-bottom: 2px solid darken($border-color-base, 80%);
+    position: relative;
+}
+.delimiter--style-2:before {
+    content: "";
+    width: 160%;
+    position: absolute;
+    left: -30%;
+    top: -4px;
+    border-top: 2px solid $border-color-base;
+}
+.delimiter--style-2 .delimiter-icon {
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    left: 50%;
+    top: -18px;
+    margin-left: -18px;
+    background: $color-white;
+    font-size: 20px;
+}
+
+//
+.delimiter-left-thick--style-1 {
+    border-left: 4px solid $color-base-1;
+}
+
+// Short delimiters
+.short-delimiter--style-1 {
+    padding: 14px 0;
+    display: block;
+    position: relative;
+}
+.short-delimiter--style-1:before {
+    content: "";
+    display: block;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 1px;
+    background: $color-base-1;
+}
+
+.short-delimiter-light:before {
+    background: $color-gray-light;
+}
+.short-delimiter-dark:before {
+    background: $color-gray-dark;
+}
+.short-delimiter-base-1:before {
+    background: $color-base-1;
+}
+
+.short-delimiter-thick {
+    height: 3px;
+}
+
+.short-delimiter-sm:before {
+    width: 40px;
+}
+.short-delimiter-md:before {
+    width: 60px;
+}
+.short-delimiter-lg:before {
+    width: 90px;
+}
+
+.short-delimiter-center.short-delimiter-sm:before {
+    left: 50%;
+    margin-left: -20px;
+}
+.short-delimiter-center.short-delimiter-md:before {
+    left: 50%;
+    margin-left: -30px;
+}
+.short-delimiter-center.short-delimiter-lg:before {
+    left: 50%;
+    margin-left: -45px;
+}
+
+// Vertical delimiters
+.vertical-delimiter--style-1 {
+    height: 100px;
+    position: relative;
+}
+.vertical-delimiter--style-1:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background-color: $color-base-1;
+}

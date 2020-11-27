@@ -1,0 +1,126 @@
+
+.wz-nav-off>li a {
+	-webkit-touch-callout:none;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	cursor:default!important
+}
+.wz-icon-inline li>a .icon-wrap {
+	display:inline-block;
+	line-height:1;
+	text-align:center;
+	white-space:nowrap;
+	vertical-align:middle;
+	color:inherit
+}
+.wz-icon-bw li>a .icon-wrap,.wz-icon-bw li>a p {
+	-webkit-transition:all .5s;
+	transition:all .5s
+}
+.wz-icon-bw li.active ~ li>a .icon-wrap {
+	color:#404040;
+	background-color:rgba(0,0,0,0.17);
+	-webkit-transition:all .5s;
+	transition:all .5s
+}
+.wz-icon-bw li:not(.active)>a p {
+	color:#404040!important;
+	-webkit-transition:all .5s;
+	transition:all .5s
+}
+.wz-classic {
+	margin:0;
+	padding:0;
+	list-style:none;
+	display:block;
+	position:relative
+}
+.wz-classic li>a .icon-wrap {
+	display:inline-block;
+	line-height:1;
+	text-align:center;
+	white-space:nowrap;
+	vertical-align:middle;
+	color:inherit
+}
+.wz-classic:after,.wz-steps:after {
+	content:'';
+	display:table;
+	clear:both
+}
+.wz-classic li,.wz-steps li {
+	-webkit-transition:all .5s;
+	transition:all .5s
+}
+.wz-classic li>a {
+	color:inherit;
+	display:block;
+	text-align:center;
+	padding:20px 0
+}
+.wz-classic .active ~ li {
+	color:inherit;
+	background-color:inherit
+}
+.wz-classic .active ~ li a {
+	opacity:.5
+}
+.wz-heading {
+	position:relative
+}
+.wz-heading .progress {
+	position:absolute;
+	left:0;
+	right:0;
+	top:50%;
+	background-color:transparent
+}
+.wz-heading.wz-w-label .progress {
+	margin-top:-0.5em
+}
+.wz-steps {
+	margin:0;
+	padding:20px 0;
+	list-style:none;
+	display:block;
+	position:relative
+}
+.wz-steps li>a .icon-wrap {
+	display:inline-block;
+	line-height:1;
+	text-align:center;
+	white-space:nowrap;
+	vertical-align:middle
+}
+.wz-steps li>a {
+	color:inherit;
+	display:block;
+	text-align:center;
+	padding:0
+}
+.wz-steps .active ~ li {
+	color:inherit
+}
+.wz-steps .active ~ li a {
+	opacity:.5
+}
+.wz-steps li:not(.active) .wz-icon {
+	display:none
+}
+.wz-steps .active ~ li .wz-icon {
+	display:inline-block
+}
+.wz-steps .active .wz-icon-done,.wz-steps .active ~ li .wz-icon-done {
+	display:none
+}
+.wz-steps li .wz-desc {
+	opacity:0;
+	-webkit-transition:opacity .5s;
+	transition:opacity .5s
+}
+.wz-steps .active .wz-desc {
+	opacity:1;
+	-webkit-transition:opacity .5s;
+	transition:opacity .5s
+}

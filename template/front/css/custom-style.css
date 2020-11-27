@@ -1,0 +1,155 @@
+/*
+Item: Active Matrimonial CMS
+Author: Active IT zone
+URL: https://www.activeitzone.com
+*/
+.navbar-brand {
+	display: inline-block;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	margin-right: 0px;
+	font-size: 1.25rem;
+	line-height: inherit;
+	white-space: nowrap;
+}
+.listing-image {
+	height: 216px !important;
+}
+.home-p-member a.btn.btn-styled.btn-xs.btn-base-1.z-depth-2-bottom.mt-2.text-white:focus,
+.home-p-member a.btn.btn-styled.btn-xs.btn-base-1.z-depth-2-bottom.mt-2.text-white:hover {
+    color: inherit;
+    text-decoration: none;
+    background: #24242D;
+    border: 1px solid #24242D;
+}
+.swiper-container {
+    height: 100%;
+    padding: 0px 10px;
+    margin: 0 -10px;
+}
+.sticky-header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 999;
+}
+.sticky-header .navbar.bg-default {
+    background: #fffffff3;
+    border-bottom: 1px solid #f1f1f1f3;
+}
+
+.sticky-header + .sticky-content {
+	padding-top: 114px;
+}
+
+
+
+
+/* sm */
+@media (max-width: 575px){
+	.top-navbar .top-navbar-menu > ul.top-menu > li > a {
+	    padding: 14px 0px;
+	}
+	.top-navbar .top-navbar-menu ul.top-menu > li ul.sub-menu {
+	    left: 0;
+	    right: auto;
+	}
+	.top-navbar .top-navbar-menu ul.top-menu > li ul.sub-menu {
+	    left: 0;
+	    right: auto;
+	}
+
+	.top-navbar .top-navbar-menu > ul.top-menu > li > a {
+	    font-size: 11px;
+	}
+
+	.top-navbar .top-navbar-menu > ul.top-menu > li > a > img {
+	    width: 12px!important;
+	    margin-top: 0px!important;
+	}
+
+	.top-navbar .top-navbar-menu > ul.top-menu > li.dropdown > a:after {
+	    margin: 0;
+	    font-size: 8px;
+	}
+
+	.top-navbar .top-navbar-menu ul.top-menu:not(:first-child) {
+	    padding-left: 5px;
+	}
+	.top-navbar .top-navbar-menu .top_bar_right .dropdown-toggle {
+	    padding: 0 7px;
+	    font-size: 18px;
+	}
+
+	.top-navbar .top-navbar-menu .top_bar_right .top_nav_img {
+	    height: 24px;
+	    width: 24px;
+	}
+
+	.top-navbar .top-navbar-menu .top_bar_right .btn-xs {
+	    padding: 3px !important;
+	}
+	nav.navbar {
+	    padding: 10px 0;
+	}
+
+	nav.navbar .navbar-brand img {
+	    max-height: 50px;
+	    max-width: 100%;
+	}
+
+	nav.navbar .navbar-brand {
+	    max-width: calc(100% - 60px);
+	}
+}
+/* md */
+@media (max-width: 767px){
+	.footer {
+	    text-align: center;
+	}
+
+	.footer .navbar-brand img {
+	    max-width: 70%;
+	    margin-bottom: 20px;
+	}
+	#payment_section .card-image img {
+	    height: auto;
+	}
+
+}
+/* lg */
+@media (max-width: 991px){
+}
+/* xl */
+@media (max-width: 1199px){
+	.table-sm td, .table-sm th {
+	    padding: 0.25rem .25rem;
+	}
+}
+
+.profile-picture.profile-picture--style-2{
+	width: 100%;
+}
+
+.home_pm{
+	border-radius: 0;
+	height: 220px;
+}
+
+.btn-facebook {
+    color: #fff;
+    background-color: #3b5998;
+    border-color: #3b5998;
+}
+
+.btn-google {
+    color: #fff;
+    background-color: #dd4b39;
+    border-color: #dd4b39;
+}
+
+.btn-twitter {
+    color: #fff;
+    background-color: #00aced;
+    border-color: #00aced;
+}
